@@ -1,4 +1,4 @@
-root {
+:root {
   /* Palette  https://www.happyhues.co/palettes/4 */
 
   /* Elements */
@@ -14,4 +14,23 @@ root {
   --Highlight: #7f5af0;
   --secondary: #72757e;
   --tertiary: #2cb67d;
+}
+
+body {
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--headline);
+}
+
+p {
+  color: var(--paragraph);
+}
+
+button {
+  background-color: var(--button);
+  color: var(--button-text);
 }
