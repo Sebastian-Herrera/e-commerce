@@ -1,0 +1,17 @@
+root {
+  /* Palette  https://www.happyhues.co/palettes/4 */
+
+  /* Elements */
+  --background: #16161a;
+  --headline: #fffffe;
+  --paragraph: #94a1b2;
+  --button: #7f5af0;
+  --button-text: #fffffe;
+
+  /* Illustration */
+  --stroke: #010101;
+  --main: ##fffffe;
+  --Highlight: #7f5af0;
+  --secondary: #72757e;
+  --tertiary: #2cb67d;
+}
