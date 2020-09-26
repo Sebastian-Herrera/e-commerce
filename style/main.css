@@ -18,6 +18,10 @@
 
 body {
   background-color: var(--background);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 h1,
@@ -34,3 +38,90 @@ button {
   background-color: var(--button);
   color: var(--button-text);
 }
+
+/* ?Sergio? */
+
+/* ? Propiedades y conocimiento de productos */
+
+.lista,
+.lista-options {
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 3%;
+
+  /* width: 100%; */
+}
+
+/* .lista-options {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 3%;
+} */
+
+.lista-options__item {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: teal; */
+}
+
+.lista-options__item-h6 {
+  margin: 0 24px;
+}
+
+.lista-options__item-span {
+  color: blue;
+}
+
+/* ? Desing Section Productos  */
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+
+  /* height: auto; */
+}
+
+.propiedades-producto {
+  /* background-color: #fff159; */
+  text-align: end;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.productos__articulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.productos__figure {
+  width: 100%;
+  height: 50%;
+}
+
+.productos__img {
+  width: 100%;
+  height: 100%;
+}
+
+.productos__h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0% 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productos__span-precio {
+  color: #fff159;
+}
+
+/* ?Finish Sergio? */
