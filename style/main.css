@@ -17,16 +17,17 @@
 }
 
 body {
-  background-color: var(--background);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
+  background-color: var(--background);
 }
 
 h1,
 h2,
-h3 {
+h3,
+a {
   color: var(--headline);
 }
 
@@ -39,35 +40,25 @@ button {
   color: var(--button-text);
 }
 
-/* ?Sergio? */
-
-/* ? Propiedades y conocimiento de productos */
-
-.lista,
-.lista-options {
-  /* background-color: aquamarine; */
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0 3%;
-
-  /* width: 100%; */
-}
-
-/* .lista-options {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0 3%;
+/* header {
+  display: grid;
+  height: 25vh;
+  margin-bottom: 120px;
+  background-color: var(--tertiary);
 } */
 
-.lista-options__item {
-  /* background-color: red; */
+/* .list,
+.lista-options {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  list-style: none;
+}
 
-  /* background-color: teal; */
+.lista-options__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lista-options__item-h6 {
@@ -78,21 +69,16 @@ button {
   color: blue;
 }
 
-/* ? Desing Section Productos  */
-
-.productos {
+.product {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
-
-  /* height: auto; */
 }
 
-.propiedades-producto {
-  /* background-color: #fff159; */
-  text-align: end;
+.characteristics__product {
   grid-column-start: 1;
   grid-column-end: 5;
+  text-align: end;
 }
 
 .productos__articulo {
@@ -113,15 +99,13 @@ button {
 }
 
 .productos__h1 {
-  text-align: center;
-  font-size: 1rem;
-  margin: 0% 20%;
   display: flex;
   flex-wrap: wrap;
+  margin: 0% 20%;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .productos__span-precio {
   color: #fff159;
-}
-
-/* ?Finish Sergio? */
+} */
