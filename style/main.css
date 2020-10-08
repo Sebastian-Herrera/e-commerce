@@ -1,34 +1,48 @@
 :root {
   /* Palette  https://www.happyhues.co/palettes/4 */
 
+  /* Size */
+  --small: 8px;
+  --medium: 16px;
+  --large: 32px;
+  --x-large: 48px;
+
   /* Elements */
   --background: #16161a;
   --headline: #fffffe;
   --paragraph: #94a1b2;
   --button: #7f5af0;
   --button-text: #fffffe;
+  --link: #7f5af0;
+
+  /* Cards */
+  --card-background: #242629;
+  --card-headline: #fffffe;
+  --card-paragraph: #94a1b2;
+  --card-tag-background: #7f5af0;
+  --card-tag-text: #fffffe;
 
   /* Illustration */
   --stroke: #010101;
   --main: ##fffffe;
-  --Highlight: #7f5af0;
+  --highlight: #7f5af0;
   --secondary: #72757e;
   --tertiary: #2cb67d;
 }
 
 body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
   background-color: var(--background);
 }
 
 h1,
 h2,
 h3,
-a {
+a,
+span {
+  margin: 0;
+  padding: 0;
   color: var(--headline);
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
@@ -40,72 +54,57 @@ button {
   color: var(--button-text);
 }
 
-/* header {
-  display: grid;
-  height: 25vh;
-  margin-bottom: 120px;
-  background-color: var(--tertiary);
-} */
-
-/* .list,
-.lista-options {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 3%;
-  list-style: none;
-}
-
-.lista-options__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lista-options__item-h6 {
-  margin: 0 24px;
-}
-
-.lista-options__item-span {
-  color: blue;
-}
-
-.product {
+.search-results {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 100%;
+  grid-gap: var(--large);
 }
 
-.characteristics__product {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  text-align: end;
+.search-results__card {
+  overflow: hidden;
+  border: 3px solid var(--stroke);
+  border-radius: 3px;
+  background-color: var(--card-background);
 }
 
-.productos__articulo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+.search-results__images {
+  position: relative;
+  margin: 0;
+  padding-top: 100%;
 }
 
-.productos__figure {
-  width: 100%;
-  height: 50%;
-}
-
-.productos__img {
+.search-results__imagen {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.productos__h1 {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0% 20%;
-  font-size: 1rem;
+.search-results__content {
+  padding: var(--medium) var(--small);
+}
+
+.search-item {
   text-align: center;
 }
 
-.productos__span-precio {
-  color: #fff159;
-} */
+.search-item--title {
+  margin-bottom: var(--large);
+}
+
+.search-item--price {
+  margin-bottom: var(--small);
+}
+
+.search-results__title {
+  font-weight: 600;
+  font-size: var(--medium);
+  letter-spacing: 1px;
+}
+
+.search-results__price {
+  color: var(--card-tag-background);
+  font-weight: 600;
+  font-size: var(--medium);
+}
