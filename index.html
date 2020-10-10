@@ -9,6 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="style/main.css" />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/b22e8207ae.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -18,22 +23,69 @@
   </head>
 
   <body>
-    <section class="search-results">
-      <article class="search-results__card">
-        <figure class="search-results__images">
-          <img src="" alt="" class="search-results__imagen" />
-        </figure>
-        <div class="search-results__content">
-          <div class="search-item search-item--title">
-            <h2 class="search-results__title">
-              Missal All Around Safe Block Sebum Zero Sun
-            </h2>
+    <main class="search-main">
+      <header class="search-view__header">
+        <div class="search-view__option">
+          <div class="search-breadcrumb">
+            <h1 class="search-breadcrumb__title">Creams & gels</h1>
           </div>
-          <div class="search-item search-item--price">
-            <span class="search-results__price">$4.00</span>
+          <div class="search-pagination">
+            <span class="search-pagination__quantity">Showing 60 of 392</span>
+            <ul class="search-pagination__navigation">
+              <li
+                class="search-pagination__button search-pagination__button--back"
+              >
+                <a href="" class="search-pagination__link">
+                  <i class="search-pagination__icon fas fa-angle-left"></i>
+                </a>
+              </li>
+              <li
+                class="search-pagination__button search-pagination__button--next"
+              >
+                <a href="" class="search-pagination__link">
+                  <i class="search-pagination__icon fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </article>
-    </section>
+        <div class="search-view__option">
+          <ul class="search-filter">
+            <li class="search-filter__option search-filters__option--brand">
+              BRAND:<span class="search-filter__highlighted">ALL BRANDS</span>
+            </li>
+            <li class="search-filter__option search-filters__option--skin">
+              SKIN TYPE:<span class="search-filter__highlighted"
+                >FOR ONLY SKIN</span
+              >
+            </li>
+            <li class="search-filter__option search-filters__option--age">
+              AGE:<span class="search-filter__highlighted">30+</span>
+            </li>
+            <li class="search-filter__option search-filters__option--sort">
+              SORT:<span class="search-filter__highlighted">BY POPULARITY</span>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="search-results">
+        <article class="search-result__card">
+          <figure class="search-result__images">
+            <img src="" alt="" class="search-result__imagen" />
+          </figure>
+          <div class="search-result__content">
+            <div class="search-item__group search-item__group--title">
+              <h2 class="search-item__title">
+                Missal All Around Safe Block Sebum Zero Sun
+              </h2>
+            </div>
+            <div class="search-item__group search-item__group--price">
+              <span class="search-item__price">$4.00</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
