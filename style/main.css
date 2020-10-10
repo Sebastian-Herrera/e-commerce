@@ -4,6 +4,7 @@
   /* Size */
   --small: 8px;
   --medium: 16px;
+  --x-medium: 24px;
   --large: 32px;
   --x-large: 48px;
 
@@ -31,6 +32,7 @@
 }
 
 body {
+  /* padding: 0 10%; */
   background-color: var(--background);
 }
 
@@ -54,6 +56,72 @@ p {
 button {
   background-color: var(--button);
   color: var(--button-text);
+}
+
+.search {
+  display: flex;
+  gap: var(--large);
+}
+
+/** Aside */
+
+.search-sidebar {
+  flex: 0 0 20%;
+  height: 100%;
+  padding: var(--medium);
+  border: 3px var(--stroke) solid;
+  border-radius: 3px;
+  background-color: var(--card-background);
+}
+
+.search-sidebar__title {
+  margin-bottom: var(--medium);
+}
+
+.search-sidebar__title > span {
+  color: var(--secondary);
+  font-size: 0.8rem;
+}
+
+.search-filter__dl {
+  margin: 0;
+}
+
+.search-filter__dt-title {
+  margin: var(--medium) 0;
+  color: var(--card-headline);
+  font-weight: 600;
+  font-size: var(--medium);
+}
+
+.search-filter__container {
+  display: none;
+  margin: var(--small) 0;
+}
+
+.search-filter__container:first-of-type {
+  margin-top: var(--x-medium);
+}
+
+.search-filter__container:last-child {
+  margin-bottom: var(--large);
+}
+
+.search-filter__dl--dropdown > .search-filter__container {
+  display: block;
+}
+
+.search-link {
+  text-decoration: none;
+}
+
+.search-filter__name {
+  color: var(--secondary);
+  font-size: var(--medium);
+}
+
+.search-filter__name--active {
+  color: var(--link);
 }
 
 /** Header results */
